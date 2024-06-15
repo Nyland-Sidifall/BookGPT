@@ -1,0 +1,109 @@
+# Python LangChain Retrevial Augmented Generation (R.A.G) App
+
+This project uses LangChain and OpenAI's GPT model to process and retrieve information from PDF documents. The project is set up to load PDF files from a specified directory, split them into manageable chunks, store them in a vector store, and enable querying using a language model.
+
+## Prerequisites
+
+- Python 3.7 or higher
+- `pip` (Python package installer)
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### 2. Create and Activate a Virtual Environment
+
+#### On Windows:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+#### On macOS/Linux:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install the Required Packages
+
+Install the necessary packages using the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Set Up the OpenAI API Key
+
+Create a `.env` file in the root directory of your project and add your OpenAI API key:
+
+```plaintext
+OPENAI_API_KEY=your-openai-api-key
+```
+
+Replace `your-openai-api-key` with your actual OpenAI API key. This key is required to access OpenAI's GPT-3.5 model.
+
+### 5. Running the Application
+
+Run the main Python script to start the application:
+
+```bash
+python src/index.py
+```
+
+### 6. Stopping the Virtual Environment
+
+To deactivate the virtual environment, simply run:
+
+```bash
+deactivate
+```
+
+## Useful Links
+
+- [LangChain Documentation](https://docs.langchain.com/)
+- [OpenAI API Documentation](https://beta.openai.com/docs/)
+- [PyPDF2 Documentation](https://pythonhosted.org/PyPDF2/)
+- [Python DotEnv Documentation](https://saurabh-kumar.com/python-dotenv/)
+- [Virtual Environments in Python](https://docs.python.org/3/tutorial/venv.html)
+
+## Project Structure
+
+```
+your-project-name/
+│
+├── src/
+│   ├── index.py
+│   └── other_files.py
+│
+├── .env
+├── requirements.txt
+├── README.md
+└── venv/
+```
+
+## Troubleshooting
+
+If you encounter any issues, ensure that:
+
+- Your Python version is 3.7 or higher.
+- The `OPENAI_API_KEY` in your `.env` file is correctly set.
+- All dependencies are installed (`pip install -r requirements.txt`).
+
+For further assistance, refer to the useful links section.
+
+### Summary
+
+- **Prerequisites**: Details the necessary software.
+- **Setup Instructions**: Guides through cloning the repo, setting up a virtual environment, installing dependencies, and running the application.
+- **API Key Setup**: Explains how to add the OpenAI API key.
+- **Useful Links**: Provides links to relevant documentation.
+- **Project Structure**: Shows the expected structure of the project.
+- **Troubleshooting**: Offers basic troubleshooting tips.

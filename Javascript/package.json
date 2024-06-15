@@ -1,0 +1,22 @@
+{
+  "name": "bookgpt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.2.8",
+    "@langchain/core": "^0.2.6",
+    "@langchain/openai": "^0.1.2",
+    "@langchain/pinecone": "^0.0.7",
+    "@pinecone-database/pinecone": "^2.2.2",
+    "dotenv": "^16.4.5",
+    "langchain": "^0.2.5",
+    "pdf-parse": "^1.1.1",
+    "pdfreader": "^3.0.2"
+  }
+}
